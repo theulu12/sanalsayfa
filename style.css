@@ -31,7 +31,7 @@ header .container {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    color: #ffc107; /* Webrazzi sarısı */
+    color: #ffc107; /* Webrazzi'deki sarı tonu */
 }
 
 header nav ul {
@@ -52,7 +52,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffc107; /* Webrazzi sarısı */
+    color: #ffc107; /* Vurgulu sarı renk */
 }
 
 main {
@@ -60,9 +60,10 @@ main {
 }
 
 h2 {
-    color: #2c3e50;
+    color: #ffc107; /* Başlıklar sarı renkte */
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2.2rem;
 }
 
 .featured-news {
@@ -72,6 +73,7 @@ h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #ffc107; /* Sarı vurgu çizgisi */
 }
 
 .featured-news:hover {
@@ -116,6 +118,7 @@ h2 {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 3px solid #ffc107; /* Sarı vurgu çizgisi */
 }
 
 .news-card:hover {
