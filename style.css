@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5;
     color: #333;
 }
 
@@ -15,11 +15,11 @@ body {
 }
 
 header {
-    background: #2c3e50;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 20px 0;
     min-height: 70px;
-    border-bottom: #3498db 3px solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header .container {
@@ -31,6 +31,7 @@ header .container {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #ffc107; /* Webrazzi sarısı */
 }
 
 header nav ul {
@@ -42,20 +43,26 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #555;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
     padding-bottom: 5px;
-    transition: border-bottom 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid #fff;
+    color: #ffc107; /* Webrazzi sarısı */
 }
 
 main {
     padding: 20px 0;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .featured-news {
@@ -64,11 +71,12 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured-news:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .featured-news a {
@@ -107,11 +115,12 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .news-card a {
@@ -139,8 +148,8 @@ main {
 }
 
 footer {
-    background: #2c3e50;
-    color: #fff;
+    background: #333;
+    color: #f0f2f5;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
