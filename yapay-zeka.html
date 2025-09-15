@@ -3,72 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yapay Zeka Haberleri - Kod Evreni</title>
+    <title>Kod Evreni - Yazılım ve Teknoloji Haberleri</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html"><h1>Kod Evreni</h1></a>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Kod Evreni</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="yapay-zeka.html">Yapay Zeka</a></li>
+                    <li><a href="yazilim.html">Yazılım</a></li>
+                    <li><a href="mobil.html">Mobil</a></li>
+                    <li><a href="eticaret.html">E-ticaret</a></li>
+                    <li><a href="girisimcilik.html">Girişimcilik</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="yapay-zeka.html">Yapay Zeka</a></li>
-                <li><a href="projelerim.html">Projelerim</a></li>
-                <li><a href="hakkimda.html">Hakkımda</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section class="content-section">
-            <h2 class="section-title">Yapay Zeka Haberleri</h2>
-            <p class="section-description">
-                Teknoloji dünyasının en hızlı gelişen alanı yapay zeka ile ilgili en son haberler, güncellemeler ve analizler burada!
-            </p>
-
-            <div class="news-card">
-                <img src="https://via.placeholder.com/600x350" alt="ChatGPT 5 Güncellemesi">
-                <div class="card-content">
-                    <h3>ChatGPT 5 Yolda: Daha Akıllı ve Hızlı Bir Dönem Başlıyor</h3>
-                    <p class="summary">
-                        OpenAI, yeni nesil yapay zeka modeli ChatGPT 5'i duyurmaya hazırlanıyor. Bu güncelleme ile modelin çok daha karmaşık görevleri yerine getirebileceği ve insan benzeri düşünme yeteneğinin artacağı belirtiliyor.
-                    </p>
-                    <a href="chatgpt-haber.html" class="read-more">Devamını Oku</a>
+        <div class="container">
+            <section class="hero-section">
+                <div class="hero-post">
+                    <a href="haber-detay.html">
+                        <img src="https://via.placeholder.com/1200x600?text=Yapay+Zeka+Haberleri" alt="Manşet Haberi">
+                        <div class="hero-content">
+                            <h3>ChatGPT'nin Yeni Devrimi: ChatGPT-5, Gelişmiş Muhakeme Yetenekleriyle Geliyor</h3>
+                        </div>
+                    </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="news-card">
-                <img src="https://via.placeholder.com/600x350" alt="Yapay Zeka ve Etik">
-                <div class="card-content">
-                    <h3>Yapay Zeka Etiği Tartışmaları Küresel Gündemde</h3>
-                    <p class="summary">
-                        Yapay zekanın hızla yayılması, beraberinde etik kaygıları da getiriyor. Algoritmaların önyargıları, veri gizliliği ve yapay zekanın iş gücü üzerindeki etkisi gibi konular, dünya çapında tartışılmaya devam ediyor.
-                    </p>
-                    <a href="yapay-zeka-etik-haber.html" class="read-more">Devamını Oku</a>
+            <section class="latest-news">
+                <h2>Son Dakika</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <a href="haber-detay.html">
+                            <img src="https://via.placeholder.com/400x250?text=iOS+26" alt="iOS 26 Haberi">
+                            <div class="card-content">
+                                <h4>iOS 26, Yeni Yazılım Geliştirici Kitini Tanıttı</h4>
+                                <p>Apple, merakla beklenen iOS 26 sürümünü tanıttı ve geliştiriciler için önemli araçlar sundu.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a href="haber-detay.html">
+                            <img src="https://via.placeholder.com/400x250?text=Mobil+Uygulama" alt="Mobil Uygulama Haberi">
+                            <div class="card-content">
+                                <h4>Mobil Reklam Pazarında Yeni Bir Dönem Başlıyor</h4>
+                                <p>Mobil uygulama geliştiricileri, reklam gelirlerini artıracak yeni yöntemlerle tanışıyor.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-card">
+                        <a href="haber-detay.html">
+                            <img src="https://via.placeholder.com/400x250?text=Girisimcilik" alt="Girişimcilik Haberi">
+                            <div class="card-content">
+                                <h4>Türkiye'den Çıkan 5 Yeni Teknoloji Girişimi</h4>
+                                <p>Yerli girişimler, global pazarda adından söz ettirmeye devam ediyor.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="news-card">
-                <img src="https://via.placeholder.com/600x350" alt="Yeni Google AI Aracı">
-                <div class="card-content">
-                    <h3>Google'dan Yazılımcılara Özel Yeni Bir Yapay Zeka Aracı</h3>
-                    <p class="summary">
-                        Google, yazılımcıların kod yazma süreçlerini hızlandıracak ve daha verimli hale getirecek yeni bir yapay zeka asistanı tanıttı. Bu araç, hata ayıklama ve kod tamamlama gibi konularda büyük kolaylıklar sunuyor.
-                    </p>
-                    <a href="google-ai-haber.html" class="read-more">Devamını Oku</a>
+            <section class="category-previews">
+                <h2>Kategoriler</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <a href="yapay-zeka.html">
+                            <img src="https://via.placeholder.com/300x200?text=Yapay+Zeka" alt="Yapay Zeka Kategorisi">
+                            <h3>Yapay Zeka</h3>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <a href="yazilim.html">
+                            <img src="https://via.placeholder.com/300x200?text=Yazilim" alt="Yazılım Kategorisi">
+                            <h3>Yazılım</h3>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <a href="mobil.html">
+                            <img src="https://via.placeholder.com/300x200?text=Mobil+Uygulamalar" alt="Mobil Uygulamalar Kategorisi">
+                            <h3>Mobil</h3>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <a href="eticaret.html">
+                            <img src="https://via.placeholder.com/300x200?text=E-ticaret" alt="E-ticaret Kategorisi">
+                            <h3>E-ticaret</h3>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <a href="girisimcilik.html">
+                            <img src="https://via.placeholder.com/300x200?text=Girisimcilik" alt="Girişimcilik Kategorisi">
+                            <h3>Girişimcilik</h3>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>Tüm hakları saklıdır &copy; 2025</p>
+        <div class="container">
+            <p>&copy; 2025 Kod Evreni. Tüm hakları saklıdır.</p>
+        </div>
     </footer>
 
 </body>
