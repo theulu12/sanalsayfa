@@ -1,47 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Sanal Sayfa</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Evreni - Yazılım ve Teknoloji Haberleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <div class="logo">SANAL SAYFA</div>
+        <div class="logo">
+            <a href="index.html"><h1>Kod Evreni</h1></a>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Teknoloji</a></li>
-                <li><a href="#">Girişimcilik</a></li>
-                <li><a href="#">Yatırım</a></li>
-                <li><a href="#">İletişim</a></li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="projeler.html">Projelerim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="main-news">
-            <h2>Ana Haber Başlığı</h2>
-            <img src="https://via.placeholder.com/800x400" alt="Ana Haber Görseli">
-            <p>Buraya ana haberin kısa özeti gelecek. Dikkat çekici ve merak uyandırıcı bir metin olmalı.</p>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Teknoloji Dünyasının Nabzı Burada Atıyor</h2>
+                <p>Yazılım dünyasındaki en son gelişmeleri, en yeni trendleri ve derinlemesine analizleri takip edin.</p>
+                <a href="yapay-zeka.html" class="cta-button">En Son Haberlere Göz At</a>
+            </div>
         </section>
 
-        <section class="latest-news">
-            <h3>Son Haberler</h3>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/250x150" alt="Haber 1 Görseli">
-                <h4>Haber 1 Başlığı</h4>
-                <p>Kısa özet metni.</p>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/250x150" alt="Haber 2 Görseli">
-                <h4>Haber 2 Başlığı</h4>
-                <p>Kısa özet metni.</p>
+        <section class="content-section featured-articles">
+            <h2 class="section-title">Öne Çıkan Yazılar</h2>
+            <div class="news-grid">
+                
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Yapay Zeka Haberleri">
+                    <div class="card-content">
+                        <h3>Yapay Zeka</h3>
+                        <p class="summary">
+                            ChatGPT'den yeni modellere, yapay zekadaki son gelişmeler ve etik tartışmalar.
+                        </p>
+                        <a href="yapay-zeka.html" class="read-more">Devamını Oku</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Web Geliştirme Haberleri">
+                    <div class="card-content">
+                        <h3>Web Geliştirme</h3>
+                        <p class="summary">
+                            Front-end ve back-end teknolojilerindeki yenilikler, framework'ler ve en iyi uygulamalar.
+                        </p>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Siber Güvenlik Haberleri">
+                    <div class="card-content">
+                        <h3>Siber Güvenlik</h3>
+                        <p class="summary">
+                            Siber saldırılar, güvenlik açıkları ve sistemlerinizi koruma yolları hakkında güncel bilgiler.
+                        </p>
+                        <a href="#" class="read-more">Devamını Oku</a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Sanal Sayfa. Tüm hakları saklıdır.</p>
+        <p>Tüm hakları saklıdır &copy; 2025</p>
     </footer>
+
 </body>
 </html>
