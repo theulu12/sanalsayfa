@@ -1,24 +1,43 @@
+/* Genel Stil Ayarları */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5;
     color: #333;
 }
 
+/* Konteynerler */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Başlık ve Navigasyon (Header & Nav) */
 header {
     background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1a1a1a;
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 nav ul {
@@ -28,58 +47,41 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    margin-left: 20px;
+nav ul li {
+    margin-left: 25px;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
     color: #555;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Ana Bölüm (Main) */
 main {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2rem 0;
 }
 
-.main-news {
-    margin-bottom: 40px;
-}
-
-.main-news img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.latest-news {
-    display: flex;
-    gap: 20px;
-}
-
-.news-item {
-    flex: 1;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.news-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-footer {
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 4rem 2rem;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-top: 20px;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero
