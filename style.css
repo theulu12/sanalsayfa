@@ -14,7 +14,7 @@ body {
     padding: 0 15px;
 }
 
-/* Header ve Navigasyon */
+/* Başlık ve Navigasyon (Header & Nav) */
 header {
     background-color: #fff;
     padding: 1rem 0;
@@ -58,10 +58,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #28a745; /* Yeşil ton */
 }
 
-/* Ana Bölüm */
+/* Ana Bölüm (Main) */
 main {
     padding: 2rem 0;
 }
@@ -102,7 +102,7 @@ main {
     line-height: 1.2;
 }
 
-/* Haber Gridleri */
+/* İçerik Bölümleri (Content Sections) */
 .latest-news, .category-previews {
     margin-bottom: 2rem;
 }
@@ -110,7 +110,7 @@ main {
 h2 {
     font-size: 1.8rem;
     font-weight: 700;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #28a745; /* Yeşil alt çizgi */
     padding-bottom: 5px;
     margin-bottom: 25px;
 }
@@ -124,16 +124,23 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/* Haber Kartı Animasyon ve Stil */
 .news-card {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasyon geçişi */
 }
 
 .news-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Yukarı kaldırma animasyonu */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Gölge efekti */
+}
+
+.news-card a {
+    text-decoration: none;
+    color: #343a40;
 }
 
 .news-card img {
@@ -156,6 +163,7 @@ h2 {
     color: #6c757d;
 }
 
+/* Kategori Kartı Animasyon ve Stil */
 .category-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -166,11 +174,12 @@ h2 {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasyon geçişi */
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Yukarı kaldırma animasyonu */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Gölge efekti */
 }
 
 .category-card a {
@@ -189,7 +198,7 @@ h2 {
     margin: 15px 0;
 }
 
-/* Haber Detay Sayfası */
+/* Haber Detay Sayfası Stili */
 .single-post .post-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -217,7 +226,26 @@ h2 {
     margin-top: 2rem;
 }
 
-/* Footer */
+/* CTA Butonları */
+.cta-button {
+    display: inline-block;
+    background-color: #28a745; /* Yeşil buton rengi */
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Buton hover rengi */
+    transform: translateY(-2px);
+}
+
+/* Altbilgi (Footer) */
 footer {
     background-color: #343a40;
     color: #f8f9fa;
@@ -240,5 +268,8 @@ footer {
     }
     .hero-content h3 {
         font-size: 1.8rem;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
     }
 }
