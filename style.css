@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #28a745; /* Yeşil ton */
+    color: #28a745;
 }
 
 /* Ana Bölüm (Main) */
@@ -78,6 +78,11 @@ main {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-post a:hover {
+    transform: scale(1.02);
 }
 
 .hero-post img {
@@ -90,17 +95,35 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
     color: #fff;
     padding: 2rem;
     width: 100%;
 }
 
+.category-tag {
+    background-color: #28a745;
+    color: white;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
 .hero-content h3 {
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 1.2;
 }
+
+.hero-content .summary {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 
 /* İçerik Bölümleri (Content Sections) */
 .latest-news, .category-previews {
@@ -110,7 +133,7 @@ main {
 h2 {
     font-size: 1.8rem;
     font-weight: 700;
-    border-bottom: 2px solid #28a745; /* Yeşil alt çizgi */
+    border-bottom: 2px solid #28a745;
     padding-bottom: 5px;
     margin-bottom: 25px;
 }
@@ -130,12 +153,12 @@ h2 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasyon geçişi */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .news-card:hover {
-    transform: translateY(-8px); /* Yukarı kaldırma animasyonu */
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Gölge efekti */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .news-card a {
@@ -174,12 +197,12 @@ h2 {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasyon geçişi */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .category-card:hover {
-    transform: translateY(-8px); /* Yukarı kaldırma animasyonu */
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Gölge efekti */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .category-card a {
@@ -229,7 +252,7 @@ h2 {
 /* CTA Butonları */
 .cta-button {
     display: inline-block;
-    background-color: #28a745; /* Yeşil buton rengi */
+    background-color: #28a745;
     color: white;
     padding: 15px 35px;
     text-decoration: none;
@@ -241,7 +264,7 @@ h2 {
 }
 
 .cta-button:hover {
-    background-color: #218838; /* Buton hover rengi */
+    background-color: #218838;
     transform: translateY(-2px);
 }
 
